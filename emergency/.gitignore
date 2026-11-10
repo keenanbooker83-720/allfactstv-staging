@@ -1,0 +1,9 @@
+dist/
+__pycache__/
+*.pyc
+.env
+.env.*
+secrets/
+*.key
+*.pem
+snapshots/*.json

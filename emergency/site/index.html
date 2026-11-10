@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="All Facts TV emergency independent catalog and streaming access portal.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ALL FACTS TV | Emergency Library</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to library</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Library navigation">
+      <a class="brand" href="#home" aria-label="All Facts TV home"><span class="brand-icon">FACTS</span><span class="brand-copy">ALL FACTS <b>TV</b><small>THE INDEPENDENT LIBRARY</small></span></a>
+      <div class="nav-heading">DISCOVER</div>
+      <nav class="nav" id="discover"><button type="button" class="active" data-view="all">⌂ <span>Home</span></button><button type="button" data-view="free">▷ <span>Free to View</span></button></nav>
+      <div class="nav-heading category-label">BROWSE SUBJECTS</div>
+      <nav class="nav nav-subjects" id="subjects"></nav>
+      <div class="sidebar-end"><div class="status-pip"></div><span>INDEPENDENT BACKUP FRAMEWORK</span><small>Catalog appears only when records are verified.</small></div>
+    </aside>
+    <div class="scrim" id="scrim" hidden></div>
+    <div class="main-area">
+      <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><a class="compact-brand" href="#home">FACTS <b>TV</b></a><div class="search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="query" placeholder="Search titles, lecturers, categories" autocomplete="off" aria-label="Search films"></div><span class="mode">EMERGENCY READY</span></header>
+      <main id="content">
+        <section class="hero" id="home"><div class="hero-lines" aria-hidden="true"></div><div class="eyebrow"><span class="dot"></span> ALL FACTS TV / INDEPENDENT EDITION</div><h1>THE FACTS.<br><em>NO MIDDLEMAN.</em></h1><p>One direct, independent home for documentaries, lectures, and free films. This framework functions even when app stores are unavailable.</p><div class="hero-actions"><button type="button" class="primary" id="browse-btn">Explore the library <span>›</span></button><button type="button" class="quiet" id="free-btn">Free to View</button></div><div class="hero-numbers"><div><b id="metric-total">—</b><span>CATALOG TITLES</span></div><div><b id="metric-free">—</b><span>FREE TO VIEW</span></div><div><b id="metric-ready">—</b><span>VERIFIED PURCHASES</span></div></div></section>
+        <section class="library" id="library"><div class="section-head"><div><span class="eyebrow section-eyebrow">THE COLLECTION</span><h2 id="library-heading">Browse Everything</h2><p id="library-description">Titles appear here when imported and verified.</p></div><span id="results-count" class="count"></span></div><div id="filters" class="filters" aria-label="Subject filters"></div><div id="message" class="message" role="status" aria-live="polite"></div><div id="cards" class="cards"></div></section>
+      </main>
+      <footer><strong>FACTS<span>TV</span></strong><span>Independent emergency framework · No app store required</span><span id="version">Version 1.0</span></footer>
+    </div>
+  </div>
+  <div id="viewer" class="modal" hidden><div class="modal-backdrop" data-close="true"></div><div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button type="button" id="close" class="modal-close" aria-label="Close player">×</button><div id="player-target" class="player-target"></div><div class="modal-info"><span class="eyebrow">FREE TO VIEW</span><h2 id="modal-title"></h2><p id="modal-subtitle"></p></div></div></div>
+</body>
+</html>
