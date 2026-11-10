@@ -77,7 +77,7 @@ export default function App(){
     <aside className={'sidebar '+(menu?'sidebar-open':'')}>
       <button className="brand" onClick={()=>go('All films')} aria-label="All Facts TV home"><span className="brand-mark">AF<span>.</span></span><span className="brand-name">ALL FACTS <b>TV</b><small>EXPLORE EVERYTHING.</small></span></button>
       <div className="sidebar-label">DISCOVER</div>
-      <nav aria-label="Discover"><button className={category==='All films'?'active':''} onClick={()=>go('All films')}><Icon name="film" size={18}/> Home</button><button className={category==='Free to View'?'active':''} onClick={()=>go('Free to View')}><Icon name="play" size={18}/> Free to View</button><button className={category==='Lectures'?'active':''} onClick={()=>go('Lectures')}><Icon name="globe" size={18}/> Scholars & Lectures</button></nav>
+      <nav aria-label="Discover"><button className={category==='All films'?'active':''} onClick={()=>go('All films')}><Icon name="film" size={18}/> Home</button><button className={category==='Free to View'?'active':''} onClick={()=>go('Free to View')}><Icon name="play" size={18}/> Free to View</button></nav>
       <div className="sidebar-label secondary-label">BROWSE SUBJECTS</div><nav aria-label="Subjects">{SUBJECTS.slice(2,-1).map(c=><button className={category===c?'active':''} onClick={()=>go(c)} key={c}><i className="nav-dot"/>{c}</button>)}</nav>
       <div className="sidebar-foot"><b>THE FACTS ARE OUT THERE.</b><p>Independent film. History. Science. Ideas.</p><span>STAGING PREVIEW · 2026</span></div>
     </aside>
